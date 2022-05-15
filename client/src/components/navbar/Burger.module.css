@@ -1,0 +1,59 @@
+/*320px — 480px: Mobile devices*/
+.burger {
+  cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.active {
+  transform: rotate(45deg);
+}
+
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:var(--col-grey-light);
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.top {
+  stroke-dasharray: 40 139;
+}
+.bottom {
+  stroke-dasharray: 40 180;
+}
+
+.active .top {
+  stroke-dashoffset: -98px;
+}
+.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+/*481px — 844px: iPads, Tablets*/
+@media screen and (min-width: 481px){
+  
+}
+
+/*845px — 1024px: Small screens, laptops*/
+@media screen and (min-width: 845px){
+  .burger {
+    display: none;
+  }
+}
+
+/*1025px — 1200px: Desktops, large screens*/
+@media screen and (min-width: 1025px){
+
+}
+
+/*1201px and more —  Extra large screens, TV*/
+@media screen and (min-width: 1201px){
+  
+}

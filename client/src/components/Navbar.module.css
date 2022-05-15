@@ -1,0 +1,87 @@
+
+.navBar {
+  position: fixed;
+  inset: 0 0 auto 0;
+}
+
+.burgerContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  margin: var(--space-4) 0;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav a {
+  display: block;
+  flex: 1;
+  padding: var(--space-4) 0;
+
+  text-align: center;
+  text-decoration: none;
+  color: var(--col-grey-dark);
+
+  transition-duration: 200ms;
+  transition-property: background-color color;
+}
+
+.nav a:hover, .nav a:focus {
+  color: white;
+  background-color: var(--col-accent);
+}
+
+.nav a:active {
+  background-color: var(--col-accent-dark);
+}
+
+/*Mobile devices, iPads & Tablets*/
+@media screen and (max-width: 844px){
+  .burgerContent {
+    position: absolute;
+    inset: 0;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    background-color: white;
+
+    transform: translatex(100%);
+    transition: transform 400ms ease-out;
+  }
+
+  .burgerContent.active {
+    transform: translateX(0%);
+  }
+
+  .nav a {
+    padding: var(--space-6);
+    margin: var(--space-2);
+
+    background-color: var(--col-grey-lighter);
+  }
+}
+
+/*Desktops+*/
+@media screen and (min-width: 845px){
+  .navBar {
+    inset: 0 auto 0 0;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: block;
+    background-color: var(--col-grey-lighter);
+  }
+}
+
+/*1201px and more —  Extra large screens, TV*/
+@media screen and (min-width: 1201px){
+  
+}

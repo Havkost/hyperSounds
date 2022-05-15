@@ -1,0 +1,37 @@
+:root {
+    --col-accent-light: rgb(214, 39, 237);
+    --col-accent: rgb(164, 16, 232);
+    --col-accent-dark: rgb(105, 9, 183);
+
+    --col-grey-lighter: rgb(222, 219, 200);
+    --col-grey-light: rgb(193, 190, 185);
+    --col-grey: rgb(137, 130, 130);
+    --col-grey-dark: #444;
+    --col-grey-darker: #222;
+
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+}
+
+*,
+*::before,
+*::after
+{ 
+	box-sizing: border-box;
+}
+
+* {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
